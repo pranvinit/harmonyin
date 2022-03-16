@@ -1,0 +1,122 @@
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 600px;
+    height: 80vh;
+}
+#contact-title-container{
+    width: 24vw;
+    height: 60px;
+    margin: 20px;
+    line-height: 60px;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ff477e;
+    color: white;
+}
+
+#contact-form-container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#contact-form-container form{
+    all: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #80ed99;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contact-form-container input, #contact-form-container textarea{
+    margin: 10px;
+}
+
+.contact-form-to{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 40px;
+    padding: 6px 8px;
+    border: 5px solid transparent;
+    transition: all 150ms linear;
+}
+.contact-form-to:focus{
+    border-color: #4285F4;
+    border-radius: 6px;
+}
+
+.contact-form-subject{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 40px;
+    padding: 6px 8px;
+    border: 5px solid transparent;
+    transition: all 150ms linear;
+}
+.contact-form-subject:focus{
+    border-color: #4285F4;
+    border-radius: 6px;
+}
+
+.contact-form-email{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 40px;
+    padding: 6px 8px;
+    border: 5px solid transparent;
+    transition: all 150ms linear;
+}
+.contact-form-email:focus{
+    border-color: #4285F4;
+    border-radius: 6px;
+}
+.contact-form-desc{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 80%;
+    height: 200px;
+    padding: 6px 8px;
+    border: 5px solid transparent;
+    transition: all 150ms linear;
+}
+.contact-form-desc:focus{
+    border-color: #4285F4;
+    border-radius: 6px;
+}
+
+@media (min-width : 300px) and (max-width: 600px){
+    #contact-form-container{
+        width: 95%;
+    }
+    #contact-title-container{
+        width: 90%;
+        font-size: 28px;
+    }
+    .contact-form-to{
+        width: 90%;
+    }
+    .contact-form-subject{
+        width: 90%;
+    }
+    .contact-form-email{
+        width: 90%;
+    }
+    .contact-form-desc{
+        width: 90%;
+    }
+}

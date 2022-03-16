@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#commentform-container{
+    background-color: #2b2d42;
+    padding-bottom: 30px;
+}
+
+#name-input{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    padding: 6px 8px;
+    text-align: center;
+    margin-right: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+#comment-input{
+    display: block;
+    resize: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 60vw;
+    padding: 10px;
+    padding-left: 14px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+#send-btn{
+    display: block;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    background-color: hsl(240, 100%, 50%);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 9px 14px;
+    border-radius: 6px;
+}
+#send-btn:hover{
+    background-color: hsl(240, 100%, 60%);
+}
+
+#comments-form{
+    all: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#show-comments{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 14px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+#show-comments:hover{
+    background-color: hsl(210, 11%, 20%);
+}
+
+/* single comment section */
+#comments-container{
+    display: grid;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: yellow; */
+    padding: 20px 0px;
+    grid-auto-flow: row;
+    grid-row-gap: 40px;
+}
+
+#single-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    min-height: 60px;
+    padding: 12px 16px;
+    border-radius: 14px;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', 'sans-serif';
+    box-sizing: border-box;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+#single-comment-meta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#single-comment > span{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#single-comment-meta span:nth-child(1){
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#single-comment-meta span:nth-child(2){
+    font-size: 14px;
+}
+
+
+/* Ratings Section */
+
+#star-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    background-color: #2b2d42;
+
+}
+
+#ratings-form{
+    all: initial;
+    display: flex;
+    align-items: center;
+}
+
+#ratings-send-btn{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#ratings-send-btn:hover{
+background-color: hsl(47, 92%, 60%);
+}
+
+@media (min-width : 300px) and (max-width: 600px){
+    #ratings-send-btn{
+        padding: 4px 6px;
+    }
+
+    #comments-form{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #name-input{
+        width: 90px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+    #comment-input{
+        width: 70%;
+        font-size: 16px;
+    }
+    #send-btn{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    #comments-container{
+        width: 90%;
+    }
+
+    #single-comment > span {
+        font-size: 16px;
+    }
+
+    #single-comment-meta span:nth-child(1){
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    #single-comment-meta span:nth-child(2){
+        font-size: 12px;
+    }
+}

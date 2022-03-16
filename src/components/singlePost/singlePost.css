@@ -1,0 +1,190 @@
+#single-post-body{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-weight: 500;
+    background-color: #2b2d42;
+    color: white;
+}
+
+#single-post-body p {
+    margin-bottom: 2rem;
+}
+
+#meta-container{
+    display: flex;
+    position: relative;
+    height: 140px;
+    align-items: center;
+    background-color: #2b2d42;
+
+}
+
+#meta{
+    min-width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+#title{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60vw;
+    color: white;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+#title span{
+    line-height: 1.2em;
+}
+
+
+#rating-info{
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    height: 80%;
+    width: 15%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#rating-info span{
+    color: white;
+    font-size: 20px;
+}
+
+#star{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#star span{
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+#blog-img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#singlepost-hr{
+    height: 1px;
+    background-color: #454545;
+    margin: 0;
+}
+
+
+#cmt-rating-label{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    line-height: 90px;
+    text-align: center;
+    background-color: #2b2d42;
+}
+
+#cmt-rating-label span{
+    display: block;
+    position: relative;
+    height: 80%;
+    width: 340px;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+}
+#cmt-rating-label span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 3px;
+    background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+}
+
+@media (min-width : 300px) and (max-width: 600px){
+    #single-post-body{
+        padding: 0px 4%;
+        font-size: 14px;
+    }
+    #single-post-body p{
+        margin-bottom: 1.4em;
+    }
+    #blog-img{
+        margin-bottom: 1.4em;
+    }
+    #meta-container{
+        flex-direction: column;
+        height: 240px;
+        justify-content: space-evenly;
+    }
+    #meta{
+        height: 20%;
+        font-size: 16px;
+    }
+    #title{
+        all: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 60vw;
+        width: 95%;
+        color: white;
+        font-family: 'Ubuntu', 'sans-serif';
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    #rating-info{
+        all: initial;
+        display: flex;
+        line-height: 2em;
+        flex-direction: column;
+        height: 20%;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    #rating-info span{
+        font-size: 16px;
+    }
+
+    #star span{
+        font-size: 16px;
+    }
+}

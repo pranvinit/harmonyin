@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#auth-alert-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    top: 30px;
+    margin: 30px auto;
+}
+
+
+#auth-remove-alert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#auth-remove-alert:hover{
+    background-color: hsl(0, 100%, 70%);
+    border-radius: 6px;
+}
+
+#form-heading{
+    display: block;
+    width: 80%;
+    height: 60px;
+    background-color: #7bf1a8;
+    line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 24vw;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d0d1ff;
+    border-radius: 14px;
+}
+
+.admin-form-input{
+    text-align: center;
+    display: block;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 150ms linear;
+}
+.admin-form-input:focus{
+    border: 5px solid #4285F4;
+}
+.sub-btn{
+    margin-top: 30px;
+}
+
+#login-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+#security-svg-container{
+    margin-top: 10px;
+}
+
+@media (min-width : 300px) and (max-width: 600px){
+    #login-form-container{
+        flex-direction: column;
+    }
+    form{
+        width: 90%;
+        height: 50vh;
+        min-height: 340px;
+    }
+    #alert-div{
+        width: 90%;
+    }
+
+}
